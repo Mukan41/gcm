@@ -11,12 +11,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nstyle.css">
+    <link rel="stylesheet" href="./css/pstyle.css">
 </head>
 
 <body>
+
+    <header class="position-absolute top-0 start-0 pt-3">
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <img src="assets/images/Group-8.png" height="35px" width="35px" alt="" class="img-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Service</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Testimonial</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn">Contact Us</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- main sections -->
     <section class="hero-section ">
-        <div class="container-fluid overflow-hidden">
+        <div class="container-fluid overflow-hidden hero-container">
             <div class="row hero-section-heading">
                 <div class="col-sm-12 col-12">
                     <p class="hero-heading">
@@ -26,7 +71,8 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-12 d-flex flex-row flex-nowrap gap-2 justify-content-center">
+                <div
+                    class="col-sm-12 d-flex flex-row flex-nowrap gap-2 justify-content-center hero-scroll-images-wrapper">
 
                     <img class="hero-scroll-image " id="imgone" src="./assets/images/cta-img.jpg" alt="">
                     <img class="hero-scroll-image " id="imgtwo" src="./assets/images/cta-img.jpg" alt="">
@@ -47,24 +93,155 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <p class="about-gcm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, soluta? Quas deleniti, perspiciatis assumenda expedita in, officia fugit doloremque repellendus laudantium? Cum!</p>
+                    <p class="about-gcm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, soluta? Quas
+                        deleniti, perspiciatis assumenda expedita in, officia fugit doloremque repellendus laudantium?
+                        Cum!</p>
                 </div>
             </div>
-            
+
         </div>
         <div class="d-flex flex-column align-items-center mx-auto cross-moving-headings">
             <div class=" cross-heading-wrapper uper">
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, soluta? Quas deleniti, perspiciatis assumenda expedita in, officia fugit doloremque repellendus laudantium? Cum!</p>
+                <p class="scroll-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, soluta? Quas deleniti,
+                    perspiciatis assumenda expedita in, officia fugit doloremque repellendus laudantium? Cum!</p>
             </div>
             <div class=" cross-heading-wrapper niche">
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, soluta? Quas deleniti, perspiciatis assumenda expedita in, officia fugit doloremque repellendus laudantium? Cum!</p>
+                <p class="scroll-para-last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, soluta? Quas deleniti,
+                    perspiciatis assumenda expedita in, officia fugit doloremque repellendus laudantium? Cum!</p>
             </div>
         </div>
     </section>
 
+
+
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="d-flex d-flex flex-wrap">
+                        <div class=" pt-5 p-2 col-sm-6 sixth-section responsive text-white ">
+                            <p class="sixth-section-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Molestiae consequuntur ut ullam eius sit repellendus? Consectetur delectus rem, ducimus
+                                tempore cumque repudiandae, ea quod obcaecati dicta, dolores totam unde aliquam minima atque
+                                tenetur id officia maiores officiis quidem est odit! Quibusdam labore eos cumque sit nisi,
+                                facilis delectus sed. Temporibus?</p>
+    
+                                <p class=" pt-5 mb-0 content">Margaret Sherman</p>
+                                <p class="  mb-0  text-secondary  responsive-text">CEO of Square</p>
+                        </div>
+                        <div class="col-sm-6 sixth-section-box m-0 ">
+                            <img src="./assets/images/cta-img.jpg" class="sixth-section-image img-fluid  img-responsive" alt="">
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+
+
+
+    <!-- ===footer=== -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-3">
+                    <p>General</p>
+                    <p><b>E.</b> mollaimran067@gmail.com</p>
+                    <p><b>P.</b> +8801718247285</p>
+                </div>
+                <div class="col-3">
+                    <p>Office</p>
+                    <p><b>A.</b>1263 Mission Street, Floor3</p>
+                    <p>San Francisco CA94103,United States</p>
+                </div>
+                <div class="col-6 d-flex  justify-content-end">
+                    <div class="col-6">
+                        <p class="">Say Hello</p>
+                        <p class="fs-4 fw-bold"><b>mollaimran067@gmail.com</b></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-3">&#169 Imran Molla All Rights Reserved</div>
+                <div class="col-4 fs-7 fw-bold">
+                    <span>instagram <span><i class="fa-solid fa-arrow-right me-3 fa-rotate-by"
+                                style="--fa-rotate-angle: -45deg"></i></span></span>
+                    <span>Linkedin <span>
+                            <i class="fa-solid fa-arrow-right me-3 fa-rotate-by" style="--fa-rotate-angle: -45deg"></i>
+                        </span></span>
+                    <span>Dribble <span>
+                            <i class="fa-solid fa-arrow-right me-3 fa-rotate-by" style="--fa-rotate-angle: -45deg"></i>
+                        </span></span>
+                </div>
+                <div class="col-2 fs-5">We Build Products</div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <script>
+        // gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".hero-scroll-images-wrapper", {
+            xPercent: 700,
+            x: () => innerWidth,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".hero-scroll-images-wrapper",
+                start: "top bottom",
+                end: () => innerWidth * 18,
+                scrub: true,
+                // pin: true,
+                invalidateOnRefresh: true,
+                anticipatePin: 1,
+                markers:true,
+            },
+            
+        });
+
+        gsap.to(".scroll-para", {
+            xPercent: 100,
+            x: () => innerWidth,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".scroll-para",
+                start: "top bottom",
+                end: () => innerWidth * 10,
+                scrub: true,
+                // pin: true,
+                invalidateOnRefresh: true,
+                anticipatePin: 1
+            }
+        });
+        gsap.to(".scroll-para-last", {
+            xPercent: -100,
+            x: () => innerWidth,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".scroll-para-last",
+                start: "top bottom",
+                end: () => innerWidth * 10,
+                scrub: true,
+                // pin: true,
+                invalidateOnRefresh: true,
+                anticipatePin: 1
+            }
+        });
+
+    </script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+
 
 </html>

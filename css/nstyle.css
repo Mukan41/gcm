@@ -1,0 +1,43 @@
+/* BOOTSTRAP */
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css);
+
+/* FONT AWESOME  */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+
+
+/* CUSTOM CSS */
+
+
+header {
+    /* background: var(--background-color); */
+    width: 100%;
+}
+
+/* header .navbar {
+    background: var(--background-color);
+} */
+
+header a {
+    color: #cad8da !important;
+    margin-right: 10px;
+    /* background: red; */
+}
+
+header button {
+    color: var(--white) !important;
+    background: var(--green-dark) !important;
+    padding: 10px 30px !important;
+    border-radius: 36px !important;
+    font-weight: 600 !important;
+}
+
+footer {
+    background: var(--background-color);
+    height: 600px;
+    color: #cad8da;
+    padding-top: 100px;
+}
+
+footer .row {
+    margin-top: 100px;
+}
