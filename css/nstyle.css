@@ -9,21 +9,20 @@
 
 
 header {
-    /* background: var(--background-color); */
     width: 100%;
 }
-
-/* header .navbar {
-    background: var(--background-color);
-} */
-
+.gcm-logo{
+    max-width:11%
+}
 header a {
     color: #cad8da !important;
     margin-right: 10px;
-    /* background: red; */
+}
+.navbar-toggler-icon{
+    color:var(--green-dark);
 }
 
-header button {
+header .header-button {
     color: var(--white) !important;
     background: var(--green-dark) !important;
     padding: 10px 30px !important;
@@ -31,13 +30,120 @@ header button {
     font-weight: 600 !important;
 }
 
+
+
+
+/* =========== services =========== */
+
+.services-underline {
+    width: 300px;
+    height: 7px;
+    background: var(--green-dark);
+    margin: auto;
+}
+
+.img-conatiner {
+    height: 80px;
+    width: 54px;
+    /* background: red; */
+    margin: auto;
+    padding-top: 30px;
+}
+
+
+.section-features .card {
+    /* background: green; */
+    border-top: 10px solid #46a788;
+    height: 550px;
+    margin: auto;
+}
+
+.section-features .card:hover {
+    box-shadow: 0 0 10px 2px #fff;
+    /* background: red; */
+}
+
+.card-body {
+    color: black !important;
+}
+
+.card-title {
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.card-text {
+    margin-top: 30px;
+    height: 210px;
+}
+
+
+.card-learn-more a {
+    text-decoration: none;
+    color: #1bae70;
+    font-weight: bold;
+
+}
+
+.card-learn-more button {
+    background: #1a3641;
+    color: var(--green-light);
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.card-learn-more button:hover {
+    background: var(--green-light);
+    color: var(--green-dark);
+}
+
+.underline {
+    width: 70px;
+    height: 7px;
+    background: #1bae70;
+    margin: auto;
+}
+
+
+
+
+/* ========== footer ========== */
+
 footer {
     background: var(--background-color);
-    height: 600px;
-    color: #cad8da;
+    color: var(--white);
     padding-top: 100px;
 }
 
-footer .row {
-    margin-top: 100px;
+.footer-info-content{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.footer-copyright-content{
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+.footer-social-connect{
+    text-decoration: none;
+    color:var(--white);
+}
+.footer-social-connect:hover{
+    color:var(--green-dark);
+}
+
+@media (max-width:992px){
+    .header-button{
+        display: none;
+    }
+    .gcm-logo{
+        max-width:15%
+    }
+}
+
+@media (max-width:576px){
+    .gcm-logo{
+        max-width:20%
+    }
 }
