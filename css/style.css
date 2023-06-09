@@ -119,3 +119,25 @@ body{
     height: 100%;
     object-fit: cover;
   }
+  .swiper-button-next,.swiper-button-prev{
+    top:50%;
+    height: 50px;
+    width: 50px;
+    background-color:var(--white);
+    border-radius: 50%;
+  }
+  .swiper-button-next:hover,.swiper-button-prev:hover{
+    background-color:var(--green-light);
+    border-radius: 50%;
+  }
+  .swiper-button-prev{
+    left:-1%;
+  }
+  .swiper-button-next{
+    right:-1%;
+  }
+  .swiper-button-next:after,.swiper-button-prev:after{
+    font-size: 20px;
+    color: var(--background-color);
+    font-weight: 700;
+  }

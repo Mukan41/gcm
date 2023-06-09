@@ -139,10 +139,10 @@
 
             <div class="row mt-4">
                 <div class="col-4">
-                    <div class="card" >
+                    <div class="card">
                         <div class="img-conatiner">
-                            <img src="assets/images/web-development-svgrepo-com.svg"
-                                class="card-img-top img-fluid " alt="...">
+                            <img src="assets/images/web-development-svgrepo-com.svg" class="card-img-top img-fluid "
+                                alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center">Web Development</h5>
@@ -159,10 +159,10 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card" >
+                    <div class="card">
                         <div class="img-conatiner">
-                            <img src="assets/images/mobile-app-developing.svg"
-                                class="card-img-top img-fluid " alt="...">
+                            <img src="assets/images/mobile-app-developing.svg" class="card-img-top img-fluid "
+                                alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center">App Developmentt</h5>
@@ -179,10 +179,10 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card" >
+                    <div class="card">
                         <div class="img-conatiner">
-                            <img src="assets/images/megaphone-with-two-sound-bars.svg"
-                                class="card-img-top img-fluid " alt="...">
+                            <img src="assets/images/megaphone-with-two-sound-bars.svg" class="card-img-top img-fluid "
+                                alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center">Digital Marketing</h5>
@@ -203,10 +203,9 @@
 
             <div class="row mt-4">
                 <div class="col-4">
-                    <div class="card" >
+                    <div class="card">
                         <div class="img-conatiner">
-                            <img src="assets/images/seo-optimization.svg" class="card-img-top img-fluid "
-                                alt="...">
+                            <img src="assets/images/seo-optimization.svg" class="card-img-top img-fluid " alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center">SEO</h5>
@@ -223,10 +222,9 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card" >
+                    <div class="card">
                         <div class="img-conatiner">
-                            <img src="assets/images/phone-volume-solid.svg" class="card-img-top img-fluid "
-                                alt="...">
+                            <img src="assets/images/phone-volume-solid.svg" class="card-img-top img-fluid " alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center">Telecom Marketing</h5>
@@ -245,8 +243,7 @@
                 <div class="col-4">
                     <div class="card">
                         <div class="img-conatiner">
-                            <img src="assets/images/graphic-design.svg" class="card-img-top img-fluid "
-                                alt="...">
+                            <img src="assets/images/graphic-design.svg" class="card-img-top img-fluid " alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center">Graphic Designing</h5>
@@ -269,12 +266,12 @@
     </section>
 
 
-<!-- =======testimonial section ====== -->
+    <!-- =======testimonial section ====== -->
 
     <section class="testimonial-section">
         <div class="container  ">
             <div class="row">
-                <div class="col-sm-12  d-flex flex-wrap  ">
+                <div class="col-sm-12  d-flex flex-wrap  position-relative">
                     <div class="col-sm-6 testimonial-slider-container swiper mySwiperslide">
                         <div class="col-sm-12  responsive text-white swiper-wrapper ">
                             <div class="responsive swiper-slide d-flex flex-column sixth-section px-3">
@@ -323,7 +320,11 @@
                                 <p class="  mb-0  text-secondary  responsive-text">Designer</p>
                             </div>
                         </div>
+                        
                     </div>
+                    <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
                     <div class="col-sm-6 testimonial-slider-container swiper mySwiper">
                         <div class="col-sm-12 sixth-section-box m-0 swiper-wrapper">
                             <img src="./assets/images/cta-img.jpg"
@@ -417,6 +418,10 @@
                 delay: 3500,
                 disableOnInteraction: false,
             },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
         var swiper = new Swiper(".mySwiper", {
             direction: "vertical",
@@ -427,6 +432,10 @@
             autoplay: {
                 delay: 3500,
                 disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
         });
     </script>
@@ -448,6 +457,21 @@
                 invalidateOnRefresh: true,
                 anticipatePin: 1,
                 // markers: true,
+            },
+
+        });
+        gsap.to(".hero-scroll-image", {
+            ease: "none",
+            rotation:360,
+            scrollTrigger: {
+                trigger: ".hero-scroll-images-wrapper",
+                start: "top bottom",
+                end: () => innerWidth * 7,
+                scrub: true,
+                // pin: true,
+                invalidateOnRefresh: true,
+                anticipatePin: 1,
+                markers: true,
             },
 
         });
