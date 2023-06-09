@@ -35,6 +35,10 @@ header .header-button {
 
 /* =========== services =========== */
 
+.section-features{
+    padding-bottom: 60px;
+}
+
 .services-underline {
     width: 300px;
     height: 7px;
