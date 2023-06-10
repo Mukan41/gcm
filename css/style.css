@@ -46,16 +46,23 @@ body{
     background: url("../assets/images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
 }
 .hero-section-heading{
-    margin-bottom: calc(2rem + 5vw);
+    margin-bottom: calc(1.8rem + 4vw);
 }
+
 .hero-heading{
     font-size: calc(1rem + 6.7vw);
     font-weight: 700;
     color: var(--white);
 }
+/* .digital-agency{
+    font-size: calc(1rem + 4vw);
+    font-weight: 600;
+    color: var(--green-light);
+    color: #72caa5;
+} */
 .half-cir-svg{
     width: 10%;
 }
@@ -94,7 +101,7 @@ body{
     background: url("../assets/images/bg3.png");
     background-size:cover;
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
 }
 .half-cir-svg.about{
     width: 9%;
@@ -108,14 +115,17 @@ body{
 }
 .cross-heading-wrapper{
     word-wrap: nowrap;
-    padding-top: .6rem;
-    padding-bottom: .6rem;
-    font-size: calc(1rem + 2.5vw);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: calc(.8rem + 2vw);
     text-transform: uppercase;
     color: var(--white);
     background-color: var(--green-dark);
-    font-weight: 700;
+    font-weight: 500;
     width: 6000px;
+}
+.scroll-para,.scroll-para-last{
+    text-shadow: 1px 1px 1px  var(--background-color);
 }
 .cross-moving-headings{
     padding-top: calc(2rem + 7vw);
@@ -165,15 +175,23 @@ body{
     transition: 0.5s ease-in-out;
     width: 100%;
 }
+.container-idea .card svg{
+fill:var(--green-light);
+transition: .3s;
+}
+.container-idea .card:hover svg{
+fill:#fff;
+}
 
 .container-idea .card:hover .imgBx {
-    width: 100px;
-    height: 100px;
-    /* left: -75px; */
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    
     top: calc(50% - 75px);
     transition: 0.5s ease-in-out;
-    background: var(--green-light);
-    border-radius: 5px;
+    background: var(--background-color);
+    border-radius: 50%;
     /* transform: rotateZ(45deg); */
     /* opacity: 0; */
 }
@@ -194,6 +212,34 @@ body{
     margin-bottom: 7px;
 }
 
+
+
+/* ========== testimonil section ============ */
+
+.testimonial-slider-container{
+    position: relative;
+}
+.dbl-qoute-testimonial{
+    position: absolute;
+    z-index: 12;
+    width: 30%;
+    top:11%;
+    left:3%
+}
+.half-cir-svg-testimonial{
+    position:absolute;
+    z-index:12;
+    width: 30%;
+    bottom:4%;
+    right:7%
+}
+
+
+
+
+
+
+
 @media (max-width: 992px) {
     .container-idea {
         justify-content: space-between;
@@ -207,7 +253,7 @@ body{
 
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
     .container-idea .card {
         max-width: auto;
         flex-direction: column;
