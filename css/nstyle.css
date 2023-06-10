@@ -11,15 +11,18 @@
 header {
     width: 100%;
 }
-.gcm-logo{
-    max-width:11%
+
+.gcm-logo {
+    max-width: 11%
 }
+
 header a {
     color: #cad8da !important;
     margin-right: 10px;
 }
-.navbar-toggler-icon{
-    color:var(--green-dark);
+
+.navbar-toggler-icon {
+    color: var(--green-dark);
 }
 
 header .header-button {
@@ -38,93 +41,80 @@ header .header-button {
 .section-services {
     background: var(--background-color);
 }
-
-.season_tabs {
-    position: relative;
-    min-height: 360px;
-    /* This part sucks */
-    clear: both;
-    margin: 25px 0;
+.season_tab img{
+    max-width: 100%;
+    height: auto;
 }
 
-.season_tab {
-    float: left;
-    clear: both;
-    width: 286px;
-}
+@media (min-width:993px) {
+    .season_tabs {
+        position: relative;
+        min-height: 360px;
+        /* This part sucks */
+        clear: both;
+        margin: 65px 0;
+    }
 
-.season_tab label {
-    background: var(--green-dark);
-    color: var(--white);
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-left: -1px;
-    font-size: calc(.3rem + .9vw);
-    font-weight: 600;
-    vertical-align: middle;
-    position: relative;
-    left: 1px;
-    width: 264px;
-    height: 78px;
-    display: table-cell;
-    background: black;
+    .season_tab {
+        float: left;
+        clear: both;
+        width: 286px;
+        margin-bottom: 5px;
 
-    /*
-    styles copy pasted above (.season_tab label)
+    }
 
-    .content-heading{
-        font-size: calc(.8rem + .9vw);
-        font-weight: 600;
+    .season_tab label {
+        background: var(--green-dark);
         color: var(--white);
-    } */
-}
+        padding: 10px;
+        /* border: 1px solid #ccc; */
+        margin-left: -1px;
+        font-size: calc(.8rem + .6vw);
+        font-weight: 500;
+        vertical-align: middle;
+        position: relative;
+        left: 1px;
+        width: 264px;
+        height: 78px;
+        display: table-cell;
+        background: black;
+        border-radius: 10px;
+        border-radius: 4*.125em;
+        box-shadow: inset 0 1px 1px #ffffff;
 
-.season_tab label svg {
-    margin-right: px;
-}
-
-.season_tab label svg:hover {
-    color: red;
-}
+    }
 
 
-.season_tab [type=radio] {
-    display: none;
-}
+    .season_tab [type=radio] {
+        display: none;
+    }
 
-.season_content {
-    position: absolute;
-    top: 0;
-    left: 286px;
-    background: var(--background-color);
-    right: 0;
-    bottom: 0;
-    padding: 40px;
-    border: 1px solid #ccc;
+    .season_content {
+        position: absolute;
+        top: 0;
+        left: 286px;
+        background: var(--background-color);
+        right: 0;
+        bottom: 0;
+        padding: 40px;
+        /* border: 1px solid #ccc; */
 
-}
+    }
 
-.season_content div span {
-    animation: 0.5s ease-out 0s 1 slideInFromTop;
-    font-weight: bold;
-    font-size: calc(.7rem + .3vw);
-    color: var(--white);
+    .season_content div span {
+        animation: 0.5s ease-out 0s 1 slideInFromTop;
+        /* font-weight: bold; */
+        font-size: calc(.8rem + .3vw);
+        color: var(--white);
 
-    /*  
-style copied above (.season_content div span)
-
-.text-font {
-    font-size: calc(.8rem + .3vw);
-    color: var(--white);
-} */
-
+    }
 }
 
 
 
 [type=radio]:checked~label {
     background: var(--white);
-    border-bottom: 2px solid #46a788;
+    /* border-bottom: 2px solid #46a788; */
     z-index: 2;
     color: var(--black);
     font-weight: bold;
@@ -134,6 +124,74 @@ style copied above (.season_content div span)
 
 [type=radio]:checked~label~.season_content {
     z-index: 1;
+}
+
+
+
+@media (max-width:992px) {
+    .season_tab img{
+        max-width: 70%;
+        height: auto;
+    }
+
+    .season_tabs {
+        margin: 25px 0;
+    }
+
+    .season_tab {
+        clear: both;
+        width: 100%;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .season_tab label {
+        background: var(--green-dark);
+        color: var(--white);
+        padding: 10px;
+        font-size: calc(.8rem + .6vw);
+        font-weight: 500;
+        vertical-align: middle;
+        position: relative;
+        left: 1px;
+        /* height: 78px; */
+        display: table-cell;
+        background: black;
+        border-radius: 10px;
+        border-radius: 4*.125em;
+        box-shadow: inset 0 1px 1px #ffffff;
+
+    }
+
+
+    .season_tab [type=radio] {
+        display: none;
+    }
+
+    .season_content {
+        background: var(--background-color);
+        padding: 40px 0px;
+    }
+
+    .season_content div span {
+        /* animation: 0.5s ease-out 0s 1 slideInFromTop; */
+        /* font-weight: bold; */
+        font-size: calc(.8rem + .3vw);
+        color: var(--white);
+    }
+
+    [type=radio]:checked~label {
+        background: var(--white);
+        z-index: 2;
+        color: var(--black);
+        font-weight: bold;
+    }
+
+    [type=radio]:checked~label~.season_content {
+        z-index: 1;
+    }
 }
 
 
@@ -151,34 +209,37 @@ footer {
     padding-top: 100px;
 }
 
-.footer-info-content{
+.footer-info-content {
     padding-top: 60px;
     padding-bottom: 30px;
 }
-.footer-copyright-content{
+
+.footer-copyright-content {
     padding-top: .8rem;
     padding-bottom: .8rem;
 }
 
-.footer-social-connect{
+.footer-social-connect {
     text-decoration: none;
-    color:var(--white);
-}
-.footer-social-connect:hover{
-    color:var(--green-dark);
+    color: var(--white);
 }
 
-@media (max-width:992px){
-    .header-button{
+.footer-social-connect:hover {
+    color: var(--green-dark);
+}
+
+@media (max-width:992px) {
+    .header-button {
         display: none;
     }
-    .gcm-logo{
-        max-width:15%
+
+    .gcm-logo {
+        max-width: 15%
     }
 }
 
-@media (max-width:576px){
-    .gcm-logo{
-        max-width:20%
+@media (max-width:576px) {
+    .gcm-logo {
+        max-width: 20%
     }
 }
