@@ -10,15 +10,25 @@
 
 header {
     width: 100%;
+    z-index: 5;
+}
+.headerlogo-link{
+    display: contents;
 }
 
 .gcm-logo {
     max-width: 11%
 }
 
-header a {
-    color: #cad8da !important;
+.nav-link {
+    color: var(--white);
     margin-right: 10px;
+}
+.nav-link:hover{
+    color: var(--green-dark);
+}
+.nav-link.active{
+    color: var(--green-dark) !important;
 }
 
 .navbar-toggler-icon {
@@ -32,6 +42,13 @@ header .header-button {
     border-radius: 36px !important;
     font-weight: 600 !important;
 }
+@media (max-width:992px){
+    .navbar-collapse{
+        background-color: var(--background-color);
+        padding: 15px 10px;
+        margin-top: 10px;
+    }
+}
 
 
 
@@ -39,7 +56,7 @@ header .header-button {
 /* =========== services =========== */
 
 .section-services {
-    background: var(--background-color);
+    /* background: var(--background-color); */
 }
 .season_tab img{
     max-width: 100%;
