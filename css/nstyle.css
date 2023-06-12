@@ -139,7 +139,7 @@ header .header-button:hover {
         box-shadow: -2px 0 0 5px #21805d41;
     }
 
-    .box-3d-button::before {
+    /* .box-3d-button::before {
         content: '';
         position: absolute;
         width: 100%;
@@ -151,7 +151,7 @@ header .header-button:hover {
 
     .box-3d-button:hover::before {
         left: 100%;
-    }
+    } */
 
 
     .season_tab [type=radio] {
@@ -266,7 +266,7 @@ header .header-button:hover {
         box-shadow: -2px 0 0 5px #21805d41;
     }
 
-    .box-3d-button::before {
+    /* .box-3d-button::before {
         content: '';
         position: absolute;
         width: 100%;
@@ -278,7 +278,7 @@ header .header-button:hover {
 
     .box-3d-button:hover::before {
         left: 100%;
-    }
+    } */
 
 
     .season_tab [type=radio] {
