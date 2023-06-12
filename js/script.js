@@ -27,17 +27,14 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 var swiper = new Swiper(".projectswiper", {
-    direction: "horizontal",
-    slidesPerView: 1,
-    spaceBetween: 30,
+    // direction: "horizontal",
+    slidesPerView: 5,
+    spaceBetween: 50,
     speed: 1000,
     loop: true,
     autoplay: {
-        delay: 3500,
+        delay: 2500,
         disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
     },
 });
 

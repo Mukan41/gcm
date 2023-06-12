@@ -12,7 +12,8 @@ header {
     width: 100%;
     z-index: 5;
 }
-.headerlogo-link{
+
+.headerlogo-link {
     display: contents;
 }
 
@@ -24,10 +25,12 @@ header {
     color: var(--white);
     margin-right: 10px;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: var(--green-dark);
 }
-.nav-link.active{
+
+.nav-link.active {
     color: var(--green-dark) !important;
 }
 
@@ -36,14 +39,20 @@ header {
 }
 
 header .header-button {
-    color: var(--white) !important;
-    background: var(--green-dark) !important;
+    color: var(--black);
+    background: var(--green-dark);
     padding: 10px 30px !important;
     border-radius: 36px !important;
     font-weight: 600 !important;
+    transition: .2s;
 }
-@media (max-width:992px){
-    .navbar-collapse{
+header .header-button:hover{
+    color: var(--green-dark);
+    background: var(--white);
+}
+
+@media (max-width:992px) {
+    .navbar-collapse {
         background-color: var(--background-color);
         padding: 15px 10px;
         margin-top: 10px;
@@ -58,7 +67,8 @@ header .header-button {
 .section-services {
     /* background: var(--background-color); */
 }
-.season_tab img{
+
+.season_tab img {
     max-width: 100%;
     height: auto;
 }
@@ -76,15 +86,14 @@ header .header-button {
         float: left;
         clear: both;
         width: 286px;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
 
     }
 
-    .season_tab label {
+    /* .season_tab label {
         background: var(--green-dark);
         color: var(--white);
         padding: 10px;
-        /* border: 1px solid #ccc; */
         margin-left: -1px;
         font-size: calc(.8rem + .6vw);
         font-weight: 500;
@@ -99,6 +108,48 @@ header .header-button {
         border-radius: 4*.125em;
         box-shadow: inset 0 1px 1px #ffffff;
 
+    } */
+
+
+
+    .box-3d-button {
+        background: linear-gradient(to right, var(--background-color), var(--black));
+        color: white;
+        width: 270px;
+        /* --height: 78px; */
+        text-align: center;
+        font-size: calc(.8rem + .6vw);
+        border: 1px solid var(--green-dark);
+        border-radius: 2em;
+        transform: perspective(500px) rotateY(-15deg);
+        text-shadow: 4px 2px 1px #21805db9;
+        box-shadow: 1px 0 2px 5px #21805d25;
+        transition: 0.5s;
+        position: relative;
+        overflow: hidden;
+        line-height: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .box-3d-button:hover {
+        transform: perspective(500px) rotateY(15deg);
+        text-shadow: -6px 3px 2px #21805db9;
+        box-shadow: -2px 0 0 5px #21805d41;
+    }
+
+    .box-3d-button::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, transparent, white, transparent);
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    .box-3d-button:hover::before {
+        left: 100%;
     }
 
 
@@ -109,12 +160,13 @@ header .header-button {
     .season_content {
         position: absolute;
         top: 0;
-        left: 286px;
+        left: 294px;
         background: var(--background-color);
         right: 0;
         bottom: 0;
         padding: 40px;
         /* border: 1px solid #ccc; */
+        /* z-index: -1; */
 
     }
 
@@ -125,28 +177,32 @@ header .header-button {
         color: var(--white);
 
     }
+
+    [type=radio]:checked~.box-3d-button {
+        transform: perspective(500px) rotateY(15deg);
+        text-shadow: -4px 2px 1px #21805db9;
+        box-shadow: -2px 0 0 5px #21805da5;
+    }
+
+
+
+    /* [type=radio]:checked~label~.season_content {
+        z-index: 1;
+    } */
+}
+.accordion-item{
+    background-color: inherit;
+    border: 0;
 }
 
 
 
-[type=radio]:checked~label {
-    background: var(--white);
-    /* border-bottom: 2px solid #46a788; */
-    z-index: 2;
-    color: var(--black);
-    font-weight: bold;
-}
 
-
-
-[type=radio]:checked~label~.season_content {
-    z-index: 1;
-}
 
 
 
 @media (max-width:992px) {
-    .season_tab img{
+    .season_tab img {
         max-width: 70%;
         height: auto;
     }
@@ -158,13 +214,13 @@ header .header-button {
     .season_tab {
         clear: both;
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 25px;
         display: flex;
         flex-direction: column;
 
     }
 
-    .season_tab label {
+    /* .season_tab label {
         background: var(--green-dark);
         color: var(--white);
         padding: 10px;
@@ -173,13 +229,53 @@ header .header-button {
         vertical-align: middle;
         position: relative;
         left: 1px;
-        /* height: 78px; */
         display: table-cell;
         background: black;
         border-radius: 10px;
         border-radius: 4*.125em;
         box-shadow: inset 0 1px 1px #ffffff;
 
+    } */
+
+
+    .box-3d-button {
+        background: linear-gradient(to right, var(--background-color), var(--black));
+        color: white;
+        /* width: 270px; */
+        /* --height: 78px; */
+        text-align: center;
+        font-size: calc(.8rem + .6vw);
+        border: 1px solid var(--green-dark);
+        border-radius: 2em;
+        transform: perspective(500px) rotateY(-15deg);
+        text-shadow: 4px 2px 1px #21805db9;
+        box-shadow: 1px 0 2px 5px #21805d25;
+        transition: 0.5s;
+        position: relative;
+        overflow: hidden;
+        line-height: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .box-3d-button:hover {
+        transform: perspective(500px) rotateY(15deg);
+        text-shadow: -6px 3px 2px #21805db9;
+        box-shadow: -2px 0 0 5px #21805d41;
+    }
+
+    .box-3d-button::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, transparent, white, transparent);
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    .box-3d-button:hover::before {
+        left: 100%;
     }
 
 
@@ -190,6 +286,7 @@ header .header-button {
     .season_content {
         background: var(--background-color);
         padding: 40px 0px;
+        margin-top: 13px;
     }
 
     .season_content div span {
@@ -199,11 +296,10 @@ header .header-button {
         color: var(--white);
     }
 
-    [type=radio]:checked~label {
-        background: var(--white);
-        z-index: 2;
-        color: var(--black);
-        font-weight: bold;
+    [type=radio]:checked~.box-3d-button {
+        transform: perspective(500px) rotateY(15deg);
+        text-shadow: -4px 2px 1px #21805db9;
+        box-shadow: -2px 0 0 5px #21805da5;
     }
 
     [type=radio]:checked~label~.season_content {
