@@ -512,7 +512,7 @@ footer {
 
 .container-2 .card .face.face2 {
     position: relative;
-    /* background: #fff; */
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
