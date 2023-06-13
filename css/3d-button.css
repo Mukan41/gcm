@@ -1,163 +1,59 @@
-/* .button {
-    position: relative;
-
-    padding: 0;
-    width: 200px;
-    height: 200px;
-
-    border: 4px solid #888888;
-    outline: none;
-    background-color: #000000;
-    border-radius: 40px;
-    box-shadow: -6px -20px 35px #ffffff, -6px -10px 15px #ffffff, -20px 0px 30px #ffffff, 6px 20px 25px rgba(0, 0, 0, 0.2);
-    transition: .13s ease-in-out;
-    cursor: pointer;
-
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
 }
 
-.button:active {
-    box-shadow: none;
+canvas {
+    display: block;
+    vertical-align: bottom;
 }
 
-.button:active .button__content {
-    box-shadow: none;
-}
-
-.button:active .button__content .button__text,
-.button__icon {
-    transform: translate3d(0px, 0px, 0px);
-}
-
-.credits {
-    margin-top: 24px;
-}
-
-.credits__reference {
-    display: inline-block;
-
-    border-bottom: 1px solid transparent;
-    color: #0099ff;
-    text-decoration: none;
-    transition: ease-in .13s;
-}
-
-.credits__reference:hover {
-    border-bottom-color: #0099ff;
-}
-
-.button__content {
-    position: relative;
-    display: grid;
-
-    padding: 20px;
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
     width: 100%;
     height: 100%;
-
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    box-shadow: inset 0px -8px 0px #dddddd, 0px -8px 0px #f4f5f6;
-    border-radius: 40px;
-    transition: .13s ease-in-out;
-
-    z-index: 1;
+    background-color: #b61924;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-.button__icon {
-    position: relative;
-    display: flex;
-
-    transform: translate3d(0px, -4px, 0px);
-    grid-column: 4;
-    align-self: start;
-    justify-self: end;
-    width: 32px;
-    height: 32px;
-    transition: .13s ease-in-out;
+/* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 
-.button__icon svg {
-    width: 32px;
-    height: 32px;
-    fill: #aaaaaa;
+.js-count-particles {
+    font-size: 1.1em;
 }
 
-.button__text {
-    position: relative;
-
-    transform: translate3d(0px, -4px, 0px);
-    margin: 0;
-    align-self: end;
-    grid-column: 1/5;
-    grid-row: 2;
-
-    text-align: center;
-    font-size: 32px;
-    background-color: #888888;
-    color: transparent;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    transition: .13s ease-in-out;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-.box-3d-button {
-	background: linear-gradient(to right, gold, darkorange);
-	color: white;
-	--width: 250px;
-	--height: calc(var(--width) / 3);
-	width: var(--width);
-	height: var(--height);
-	text-align: center;
-	line-height: var(--height);
-	font-size: calc(var(--height) / 2.5);
-	font-family: sans-serif;
-	letter-spacing: 0.2em;
-	border: 1px solid darkgoldenrod;
-	border-radius: 2em;
-	transform: perspective(500px) rotateY(-15deg);
-	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
-	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
-	transition: 0.5s;
-	position: relative;
-	overflow: hidden;
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
-.box-3d-button:hover {
-	transform: perspective(500px) rotateY(15deg);
-	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
-	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
 }
 
-.box-3d-button::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to right, transparent, white, transparent);
-	left: -100%;
-	transition: 0.5s;
+.count-particles {
+    border-radius: 0 0 3px 3px;
 }
-
-.box-3d-button:hover::before {
-	left: 100%;
-}
-
-
-
-
-
-
-

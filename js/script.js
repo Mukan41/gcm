@@ -36,6 +36,24 @@ var swiper = new Swiper(".projectswiper", {
         delay: 2500,
         disableOnInteraction: false,
     },
+    breakpoints: {
+        250: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        576: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+        },
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+        },
+        1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+        },
+    },
 });
 
 

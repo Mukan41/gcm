@@ -39,6 +39,42 @@ body {
     font-size: calc(.8rem + .3vw);
     color: var(--white);
 }
+.color-black{
+    color:var(--background-color)
+}
+
+/* =======  scrollbar css ======== */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #46a788, #d3ffd0);
+    /* background-image: url(https://images.unsplash.com/photo-1624816479961-bd2ba4f0dbda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80); */
+    background-size: cover;
+    /* object-fit: fill; */
+    /* background-repeat: no-repeat; */
+    border-radius: 15px;
+    border: 2px solid grey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: radial-gradient(#1a3641, #46a788);
+}
+
+
+
 
 
 /* ========= Hero Section ========== */
@@ -69,10 +105,11 @@ body {
     color: var(--green-light);
     color: #72caa5;
 } */
-.gcm-mid-line-logo{
-    width:7%;
+.gcm-mid-line-logo {
+    width: 7%;
     margin-top: -22px;
 }
+
 .half-cir-svg {
     width: 10%;
 }
@@ -118,8 +155,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-.about-section .gcm-mid-line-logo{
-    width:3.8%;
+
+.about-section .gcm-mid-line-logo {
+    width: 3.8%;
     margin-top: -10px;
 }
 
@@ -186,6 +224,7 @@ body {
     width: 45%;
     margin: 30px 0;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .container-idea .card .imgBx {
@@ -201,14 +240,16 @@ body {
     overflow: hidden;
     transition: 0.5s ease-in-out;
     width: 100%;
+    border-radius: 15px;
 }
 
 .container-idea .card svg {
     fill: var(--green-light);
     transition: .3s;
     height: 100px;
-    width:100px;
+    width: 100px;
 }
+
 .container-idea .card:hover {
     border: 0;
 }
@@ -216,7 +257,7 @@ body {
 .container-idea .card:hover svg {
     fill: #fff;
     height: 60px;
-    width:60px;
+    width: 60px;
 }
 
 .container-idea .card:hover .imgBx {
@@ -255,11 +296,47 @@ body {
 /* ======== deliver project section ========= */
 
 .delever-project-section {
-    padding-bottom: calc(60px + 3vw);
-    background: url("../assets/images/bg3.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    padding-bottom: calc(40px + 3vw);
+    margin-bottom: calc(60px + 3vw);
+    padding-top: calc(40px + 3vw);
+    color: var(--black);
+    position: relative;
+}
+
+.particles-js-canvas-el {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+}
+
+.delever-project-section .head-deliver{
+    z-index: 2;
+}
+
+.piggle-img {
+    max-width: 70%
+}
+
+.tejcab-img {
+    max-width: 60%
+}
+
+.jolger-img {
+    max-width: 70%
+}
+
+.pinaka-img {
+    width: 100%;
+    /* background-color: #fff; */
+}
+
+.kusum-img {
+    max-width: 70%;
+    /* background-color: #fff; */
 }
 
 
@@ -285,12 +362,14 @@ body {
     bottom: 4%;
     right: 7%
 }
-.testimonial-profile-name{
+
+.testimonial-profile-name {
     font-size: calc(.8rem + .8vw);
     font-weight: 400;
     color: var(--white);
 }
-.testimonial-profile-post{
+
+.testimonial-profile-post {
     color: #cfcfcf;
     font-size: calc(.4rem + .4vw);
     font-weight: 200;
@@ -326,20 +405,59 @@ body {
     .container-idea .card:hover .imgBx {
         width: 100%;
         left: 0;
+
         transition: 0.5s ease-in-out;
 
     }
+    .container-idea .card:hover{
+        border: 0;
+    }
 
     .container-idea .card:hover .imgBx {
-        width: 0%;
-        border-radius: 7px;
-        opacity: 0
+        width: 150px;
+        height: 150px;
+        /* border-radius: 7px; */
+        /* opacity: 0; */
+        left: calc(50% - 75px);
+        top: -75px;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        padding-top: 60px;
+
+    }
+    .container-idea .card:hover .content{
+        border: 0;
     }
 
 
     .container-idea .card .content {
         position: relative;
         width: 100%;
+        padding-top: 75px;
+        
+    }
+
+    .piggle-img {
+        max-width: 100%
+    }
+
+    .tejcab-img {
+        max-width: 85%
+    }
+
+    .jolger-img {
+        max-width: 100%
+    }
+
+    .pinaka-img {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .kusum-img {
+        max-width: 90%;
+        background-color: #fff;
     }
 }
 
@@ -354,12 +472,14 @@ body {
         max-width: 50%;
         border-radius: 20px;
     }
-    .gcm-mid-line-logo{
-        width:9.5%;
+
+    .gcm-mid-line-logo {
+        width: 9.5%;
         margin-top: -5px;
     }
-    .about-section .gcm-mid-line-logo{
-        width:6%;
+
+    .about-section .gcm-mid-line-logo {
+        width: 6%;
         margin-top: -5px;
     }
 
