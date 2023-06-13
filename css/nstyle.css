@@ -1127,3 +1127,51 @@ img {
     border-radius: 0px;
     border-color: #46a788;
 }
+
+
+
+/* ====== FAQ ======= */
+
+.section-faq {
+    /* background: #1a3641; */
+    /* height: 358px; */
+    padding-bottom: calc(80px + 3vw);
+}
+
+.accordion-button {
+    background: #46a788;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* border-radius: 5px; */
+
+}
+
+.accordion-button:focus {
+    border-color: black !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #46a788;
+    color: #1a3641;
+
+}
+
+.accordion-button:not(.collapsed)::after {
+    color: #d3ffd0 !important;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.accordion-button:hover {
+    background: #d3ffd0;
+    color: #1a3641;
+}
+
+.accordion-body {
+    background: white;
+    color: #1a3641;
+}
