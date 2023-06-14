@@ -112,6 +112,7 @@ header .header-button:hover {
     height: auto;
 }
 
+
 @media (min-width:993px) {
     .season_tabs {
         position: relative;
@@ -235,6 +236,32 @@ header .header-button:hover {
     border: 0;
 }
 
+
+@media (min-width:1400px){
+    /* .season_tab {
+        float: left;
+        clear: both;
+        width: 300px;
+        margin-bottom: 15px;
+
+    } */
+    .box-3d-button {
+        width: 295px;
+        z-index: 1;
+    }
+    .season_content {
+        position: absolute;
+        top: 0;
+        left: 305px;
+        background: var(--background-color);
+        right: 0;
+        bottom: 0;
+        padding: 40px;
+        /* border: 1px solid #ccc; */
+        /* z-index: -1; */
+
+    }
+}
 
 
 
